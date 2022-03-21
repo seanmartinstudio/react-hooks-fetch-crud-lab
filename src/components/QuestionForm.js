@@ -20,6 +20,20 @@ function QuestionForm(props) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
+    // ////
+    // fetch("http://localhost:4000/questions", {
+    //   method: "POST",
+    //   headers: 
+    //   { "Content-Type": "application/json"},
+    //   Body: 
+    //   {
+    //     "prompt":,
+    //     "answers":,
+    //     "correctIndex": 
+    //   })
+    //   .then((res) => res.json())
+    //   .then((data) => console.log("formData =>", formData))
+    // }
   }
 
   return (
