@@ -10,9 +10,19 @@ useEffect(() => {
   .then((data) => setQuestionData(data) )
 },[])
 
+function handleDeleteUI(id) {
+  const newArrDelete = questionData.filter((q) => {
+    if(q.id != id) {
+      return q.id
+    }
+  })
+  setQuestionData(newArrDelete)
+}
+
 const newArr = questionData.map((q) => (
-  <QuestionItem question = {q} key = {q.id} />
+  <QuestionItem handleDeleteUI={handleDeleteUI} question = {q} key = {q.id} />
 ))
+
 
 
   return (

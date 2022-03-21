@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestionItem({ question }) {
+function QuestionItem({ question, handleDeleteUI }) {
   const { id, prompt, answers, correctIndex } = question;
 
   const options = answers.map((answer, index) => (
@@ -16,6 +16,8 @@ function QuestionItem({ question }) {
     })
     .then((r) => r.json())
     .then(() => console.log("Deleted"))
+    handleDeleteUI(id)
+
     }
   
   return (
