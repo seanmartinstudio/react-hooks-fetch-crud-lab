@@ -10,12 +10,16 @@ useEffect(() => {
   .then((data) => setQuestionData(data) )
 },[])
 
+const newArr = questionData.map((q) => (
+  <QuestionItem question = {q} key = {q.id} />
+))
+
 
   return (
     <section>
       <h1>Quiz Questions</h1>
       <ul>
-        <QuestionItem question={questionData}/>
+        {newArr}
       </ul>
     </section>
   );
