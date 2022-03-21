@@ -15,7 +15,7 @@ function QuestionItem({ question }) {
       method: "DELETE",
     })
     .then((r) => r.json())
-    .then(() => console.log("deleted!"));
+    .then(() => console.log("Deleted"))
     }
   
   return (
