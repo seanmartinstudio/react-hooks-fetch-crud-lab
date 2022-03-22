@@ -12,7 +12,7 @@ useEffect(() => {
 
 function handleDeleteUI(id) {
   const newArrDelete = questionData.filter((q) => {
-    if(q.id != id) {
+    if(q.id !== id) {
       return q.id
     }
   })

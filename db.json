@@ -1,3 +1,26 @@
 {
-  "questions": []
+  "questions": [
+    {
+      "prompt": "First Car?",
+      "answers": [
+        "Volvo",
+        "Toyota",
+        "Lexus",
+        "Honda"
+      ],
+      "correctIndex": 0,
+      "id": 1
+    },
+    {
+      "prompt": "High School",
+      "answers": [
+        "Gloucester High",
+        "Boston High",
+        "Beverly High",
+        "Essex High"
+      ],
+      "correctIndex": 0,
+      "id": 2
+    }
+  ]
 }

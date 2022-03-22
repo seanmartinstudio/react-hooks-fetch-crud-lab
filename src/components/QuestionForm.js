@@ -19,8 +19,6 @@ function QuestionForm(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
-    // ////
     fetch("http://localhost:4000/questions", {
       method: "POST",
       headers: 
@@ -91,6 +89,7 @@ function QuestionForm(props) {
             name="correctIndex"
             value={formData.correctIndex}
             onChange={handleChange}
+        
           >
             <option value="0">{formData.answer1}</option>
             <option value="1">{formData.answer2}</option>
@@ -98,7 +97,7 @@ function QuestionForm(props) {
             <option value="3">{formData.answer4}</option>
           </select>
         </label>
-        <button type="submit">Add Question</button>
+        <button type="submit" >Add Question</button>
       </form>
     </section>
   );
