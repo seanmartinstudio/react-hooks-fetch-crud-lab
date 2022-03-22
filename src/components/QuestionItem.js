@@ -15,8 +15,8 @@ function QuestionItem({ question, handleDeleteUI }) {
       method: "DELETE",
     })
     .then((r) => r.json())
-    .then(() => console.log("Deleted"))
-    handleDeleteUI(id)
+    .then(() => handleDeleteUI(id))
+    
 
     }
   

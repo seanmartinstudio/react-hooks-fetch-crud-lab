@@ -10,17 +10,6 @@
       ],
       "correctIndex": 0,
       "id": 1
-    },
-    {
-      "prompt": "High School",
-      "answers": [
-        "Gloucester High",
-        "Boston High",
-        "Beverly High",
-        "Essex High"
-      ],
-      "correctIndex": 0,
-      "id": 2
     }
   ]
 }
